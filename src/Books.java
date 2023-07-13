@@ -1,4 +1,4 @@
-public class Books {
+public class Books implements Product {
 
     private String ISBN;
     private String title;
@@ -54,7 +54,7 @@ public class Books {
     }
 
 
-    public void printBookDetails() {
+    public void printProductDetails() {
         System.out.println("ISBN Number = " + ISBN + "\nTitle: " + title + "\nCost: " + cost + "\nAuthor(s): " + "\n" + author1 + "\n" + author2 + "\n" + author3 + "\n" + author4 + "\n" + author5 + "\n" + author6 + "\n" + author7 + "\n" + author8 + "\n" + author9 + "\n" + author10);
 
     }

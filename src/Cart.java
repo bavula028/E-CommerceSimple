@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Cart {
-    private ArrayList<Books> books = new ArrayList();
+    private ArrayList<Product> products = new ArrayList();
 
     //CONSTRUCTOR
-    public void addBooks(Books bookInput){
-        books.add(bookInput);
+    public void addProduct(Product productInput){
+        products.add(productInput);
 
         //int i = 0;
         //while (i < books.size()) {
@@ -22,11 +22,11 @@ public class Cart {
     private double totalInCart = 00.00;
     //ITERATOR
     public double getTotal(){
-        Iterator booksIterator = books.iterator();
+        Iterator productsIterator = products.iterator();
 
-        while (booksIterator.hasNext()){
-            Books book = (Books) booksIterator.next();
-            totalInCart += book.getCost();
+        while (productsIterator.hasNext()){
+            Product product = (Product) productsIterator.next();
+            totalInCart += product.getCost();
 
         }
         return totalInCart;
